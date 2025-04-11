@@ -9,10 +9,19 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   </head>
   <body>
     <header class="HeaderSinBg">
-      <div class="Header_Top content">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        class="Header_Top content"
+      >
         <a href="index.html">
           <p class="Logo">Art<span>Light</span></p>
         </a>
@@ -29,7 +38,7 @@
             <a href="nosotros.html">Nosotros</a>
             <a href="anuncios.html">Anuncios</a>
             <a href="blogs.html">Blog</a>
-            <a href="#">Contacto</a>
+            <a href="contacto.html">Contacto</a>
           </nav>
         </div>
       </div>
@@ -37,7 +46,7 @@
     <section class="SeccionBlogs">
       <h3>Nuestros blogs</h3>
       <div class="Articulos content">
-        <a href="blog.html">
+        <a data-aos="zoom-in-down" data-aos-duration="2000" href="blog.html">
           <div class="Articulo">
             <img src="build/images/Lampara1.jpg" alt="Lampara 1" />
             <div class="Blog__Texto">
@@ -56,7 +65,7 @@
             </div>
           </div>
         </a>
-        <a href="blog.html">
+        <a data-aos="zoom-in-down" data-aos-duration="2000" href="blog.html">
           <div class="Articulo">
             <img src="build/images/Lampara2.jpg" alt="Lampara 1" />
             <div class="Blog__Texto">
@@ -75,7 +84,7 @@
             </div>
           </div>
         </a>
-        <a href="blog.html">
+        <a data-aos="zoom-in-down" data-aos-duration="2000" href="blog.html">
           <div class="Articulo">
             <img src="build/images/Lampara3.jpg" alt="Lampara 3" />
             <div class="Blog__Texto">
@@ -94,7 +103,7 @@
             </div>
           </div>
         </a>
-        <a href="blog.html">
+        <a data-aos="zoom-in-down" data-aos-duration="2000" href="blog.html">
           <div class="Articulo">
             <img src="build/images/Lampara1.jpg" alt="Lampara 1" />
             <div class="Blog__Texto">
@@ -121,7 +130,7 @@
           <a href="nosotros.html">Nosotros</a>
           <a href="anuncios.html">Anuncios</a>
           <a href="blogs.html">Blog</a>
-          <a href="#">Contacto</a>
+          <a href="contacto.html">Contacto</a>
         </nav>
 
         <p>ArtLight &copy;</p>
@@ -129,5 +138,8 @@
     </footer>
 
     <script src="build/scripts/app.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

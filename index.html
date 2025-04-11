@@ -9,10 +9,19 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   </head>
   <body>
     <header class="Header__Complet">
-      <div class="Header__Complet--Content content">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        class="Header__Complet--Content content"
+      >
         <div class="Header_Top">
           <p class="Logo">Art<span>Light</span></p>
           <div class="mobileversion">
@@ -28,7 +37,7 @@
               <a href="nosotros.html">Nosotros</a>
               <a href="anuncios.html">Anuncios</a>
               <a href="blogs.html">Blog</a>
-              <a href="#">Contacto</a>
+              <a href="contacto.html">Contacto</a>
             </nav>
           </div>
         </div>
@@ -38,7 +47,11 @@
       </div>
     </header>
 
-    <main class="Nosotros content">
+    <main
+      data-aos="zoom-in-up"
+      data-aos-duration="2000"
+      class="Nosotros content"
+    >
       <h2>Mas sobre ArtLight</h2>
 
       <div class="Nosotros__Informcion">
@@ -81,7 +94,7 @@
       <h2>Lamparas en venta</h2>
 
       <div class="LamparaContenedor">
-        <div class="Lampara">
+        <div class="Lampara" data-aos="zoom-in-down" data-aos-duration="2000">
           <img src="build/images/Lampara1.jpg" alt="Modelo de lampara 1" />
           <div class="LamparaTexto">
             <h3>Brisa de Papel</h3>
@@ -93,7 +106,7 @@
             <a class="Boton-1" href="anuncios.html">Ver lampara</a>
           </div>
         </div>
-        <div class="Lampara">
+        <div class="Lampara" data-aos="zoom-in-down" data-aos-duration="2000">
           <img src="build/images/Lampara2.jpg" alt="Modelo de lampara 2" />
           <div class="LamparaTexto">
             <h3>SteelGlow</h3>
@@ -105,7 +118,7 @@
             <a class="Boton-1" href="anuncios.html">Ver lampara</a>
           </div>
         </div>
-        <div class="Lampara">
+        <div class="Lampara" data-aos="zoom-in-down" data-aos-duration="2000">
           <img src="build/images/Lampara3.jpg" alt="Modelo de lampara 3" />
           <div class="LamparaTexto">
             <h3>Aurora de Cristal</h3>
@@ -121,7 +134,11 @@
     </section>
 
     <section class="SeccionContacto">
-      <div class="SeccionContacto-informacion content">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        class="SeccionContacto-informacion content"
+      >
         <h2>Encuentra tu luz</h2>
         <p>
           Llena el formulario de contacto y un asesor se pondrá en contacto
@@ -135,7 +152,7 @@
       <section class="SeccionBlogs">
         <h3>Nuestros blogs</h3>
         <div class="Articulos content">
-          <a href="blog.html">
+          <a data-aos="zoom-in-down" data-aos-duration="2000" href="blog.html">
             <div class="Articulo">
               <img src="build/images/Lampara1.jpg" alt="Lampara 1" />
               <div class="Blog__Texto">
@@ -154,7 +171,7 @@
               </div>
             </div>
           </a>
-          <a href="blog.html">
+          <a data-aos="zoom-in-down" data-aos-duration="2000" href="blog.html">
             <div class="Articulo">
               <img src="build/images/Lampara2.jpg" alt="Lampara 1" />
               <div class="Blog__Texto">
@@ -175,7 +192,7 @@
           </a>
         </div>
       </section>
-      <section class="Mision">
+      <section data-aos="zoom-in-down" data-aos-duration="2000" class="Mision">
         <h3>Nuestra mision</h3>
         <div class="misiontext">
           <blockquote>
@@ -192,12 +209,15 @@
         <a href="nosotros.html">Nosotros</a>
         <a href="anuncios.html">Anuncios</a>
         <a href="blogs.html">Blog</a>
-        <a href="#">Contacto</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
 
       <p>ArtLight &copy;</p>
     </footer>
 
     <script src="build/scripts/app.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
